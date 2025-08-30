@@ -6,7 +6,7 @@ const Listing = require("./models/listing.js");
 const path = require("path");
 const methodOverride = require ("method-override");
 const ejsMate = require ("ejs-mate");
-const wrapAsync = require("./utlis/WrapAsync.js");
+const wrapAsync = require("./utlis/WrapAsync.js"); 
 const ExpressError = require("./utlis/ExpressError.js");
 const { listingSchema ,reviewSchema } = require("./schema.js");
 const Review = require("./models/reviews.js");
@@ -118,7 +118,7 @@ app.use("/" , userRouter);
  });
 
  app.get("/" , (req, res) => {
-    res.send("Home route is working!");
+    res.send("Welcome to Wanderlust!");
  })
  
 app.listen(port, () => {
